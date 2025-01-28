@@ -53,23 +53,31 @@
 my_list_1 = []
 
 
-def smallest_positive(input):
-  if len(input) == 0:
-     return None
-  minimum = input[0]
-  for item in input:
-      if item < input[0] and item > 0:
-        minimum = item
-  if minimum < 0:
-     return None
-  else:
-    return minimum
+# def smallest_positive(input):
+#   if len(input) == 0:
+#      return None
+#   minimum = input[0]
+#   for item in input:
+#       if item < input[0] and item > 0:
+#         minimum = item
+#   if minimum < 0:
+#      return None
+#   else:
+#     return minimum
    
-result = smallest_positive(my_list_1)
-print(result)
+# result = smallest_positive(my_list_1)
+# print(result)
 
 
-
+my_dict = {'a':[0, 1, 2, 3], 'b':[0, 1, 2, 3], 'c':[0, 1, 2, 3], 'd':[0, 1, 2, 3]}
+i = 0
+output = []
+for key in my_dict:
+    print(key)
+    print(my_dict[key])
+    output.append(my_dict[key][i])
+    i += 1
+print(output)
 
 
 
